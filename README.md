@@ -61,7 +61,7 @@ Then we use the platform ready event to configure the scanner (see /src/app/app.
 
 ## Observations
 
-To use our product you need a license, you can get an evaluation license here: [MWDN](https://cmbdn.cognex.com/lpr/evaluation/new)
+To use our product you need a license, you can get an evaluation license here: [CMBDN](https://cmbdn.cognex.com/lpr/evaluation/new)
 
 This starter is using [Manatee Works Barcode Scanner SDK Phonegap Plugin](https://github.com/manateeworks/phonegap-manateeworks-v3.git) which is property of the Cognex Corporation
 
