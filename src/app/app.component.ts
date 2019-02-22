@@ -28,6 +28,7 @@ export class MyApp {
                   {"method" : 'MWBenableZoom', "value" : [true]}
                   ,{"method" : 'MWBsetZoomLevels', "value" : [200, 400, 1]}
                   ,{"method" : 'MWBsetInterfaceOrientation', "value" : [mw_c.OrientationLandscapeLeft]}
+				  ,{"method" : 'MWBsetFlags', "value" : [0, mw_c.MWB_CFG_GLOBAL_ENABLE_MULTI]}
                   // {"method" : 'MWBsetOverlayMode', "value" : [mw_c.OverlayModeImage]}
               ];
           var keys : any = {

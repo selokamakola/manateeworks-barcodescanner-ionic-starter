@@ -50,14 +50,16 @@ export class HistoryListPage {
 			if (this.scannerActive =="barcode"){
 				this.scannerActive = "power";
 				this.manateeScanner.scanner.startScanning(0,0,100,50).then(response =>{
-				  if(response && response.code){
-				    this.zone.run(() => {
-				    	this.list_data.push(response);
-				    	this.list.data = this.list_data;
-				    	this.scannerActive = "barcode";
-				    	this.listsFactory.setItem(this.id,this.list).then(response=>{})
-		       	
-				    });
+				  if(response && response.length > 0){
+					response.forEach((item, index) => {
+						this.zone.run(() => {
+							this.list_data.push(item);
+							this.list.data = this.list_data;
+							this.scannerActive = "barcode";
+							this.listsFactory.setItem(this.id,this.list).then(item=>{})
+					
+						});
+					});
 				  }
 				  else{
 				    this.zone.run(() => {
