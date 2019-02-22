@@ -67,4 +67,4 @@ This starter is using [Manatee Works Barcode Scanner SDK Phonegap Plugin](https:
 
 ## License
 
-[Manatee Works](https://manateeworks.com) © Cognex Corporation
+[Manatee Works](https://cmbdn.cognex.com) © Cognex Corporation
